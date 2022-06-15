@@ -1,8 +1,11 @@
 import './index.css'
 import ReactDOM from 'react-dom'
 import React from 'react'
+
 import Primeiro from './componentes/basicos/Primeiro'
-import ComParametros from './componentes/ComParametros'
+import ComParametros from './componentes/basicos/ComParametros'
+import Fragmentos from './componentes/basicos/Fragmentos'
+
 
 ReactDOM.render(
 
@@ -14,6 +17,8 @@ ReactDOM.render(
        nota="9.3">
         
        </ComParametros>
+
+       <Fragmentos></Fragmentos>
     </div>,
      document.getElementById('root')
 )
