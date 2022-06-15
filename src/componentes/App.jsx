@@ -1,4 +1,5 @@
 
+import './basicos/Layout/App.css';
 import React from 'react'
 import Card from './basicos/Layout/Card'
 import Aleatorio from './basicos/Aleatorio'
@@ -10,33 +11,37 @@ import Fragmentos from './basicos/Fragmentos'
 
 export default () => (
 
-  <div id="app">
+  <div className='App'>
     <h1>Fundamentos React </h1>
 
-    <Card titulo="#4Desafio Aleatorio">
+    <div className='Cards'>
+      <Card titulo="#4Desafio Aleatorio">
 
-      <Aleatorio min={1} max={60} />
+        <Aleatorio min={1} max={60} />
 
-    </Card>
+      </Card>
 
-    <Card titulo="#3Fragmento">
+      <Card titulo="#3Fragmento">
 
-      <Fragmentos> </Fragmentos>
+        <Fragmentos> </Fragmentos>
 
-    </Card>
+      </Card>
 
-    <Card titulo="#2Com Parametro">
+      <Card titulo="#2Com Parametro">
 
-      <ComParametros
-        titulo="Situacao do aluno"
-        aluno="Breno"
-        nota={9.3}
-      />
-    </Card>
+        <ComParametros
+          titulo="Situacao do aluno"
+          aluno="Breno"
+          nota={9.3}
+        />
+      </Card>
 
-    <Card titulo=" #1Primeiro Componente">
-      <Primeiro></Primeiro>
-    </Card>
+      <Card titulo=" #1Primeiro Componente">
+        <Primeiro></Primeiro>
+      </Card>
+    </div>
+
+
 
   </div>
 );
