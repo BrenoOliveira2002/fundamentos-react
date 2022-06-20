@@ -1,6 +1,13 @@
+
 import React from 'react'
 
 export default props => {
+
+    const cb = props.quandoClicar
+    const min = 50
+    const max = 70
+    const gerarIdade = () => parseInt(Math.random() * (max - min))
+    const gerarNerd = () => Math.random() > 0.5
 
     return (
 
@@ -11,7 +18,7 @@ export default props => {
             </div>
             <button onClick={
                 function (e) {
-                    props.quandoClicar('Joao', 53, true)
+                    props.quandoClicar('Joao', gerarIdade, gerarNerd)
                 }
             }>
                  Fornecer Informacoes</button> 
