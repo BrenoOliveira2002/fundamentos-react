@@ -1,7 +1,7 @@
 import React from "react";
-import _if from "./if";
+import If, {Else} from "./If";
 
-export default props => {
+export default (props) => {
 
     const usuario = props.usuario || {}
 
@@ -9,14 +9,21 @@ export default props => {
 
         <div>
 
+            {/*
+
             <if test={usuario && usuario.nome}>
             Seja Bem vindo {props.usuario.nome} !
             <br></br>
             </if>
             <if test = {!usuario || !usuario.nome}>
-
+            
                 Seja bem vindo Amigao
             </if>
+    */}
+
+        <If test ={usuario && usuario.nome}>
+            Seja bem vindo <strong>{usuario.nome}</strong>! <br></br>
+        </If>
         </div> 
     )
 }
