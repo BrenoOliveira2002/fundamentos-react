@@ -2,6 +2,8 @@
 import './basicos/Layout/App.css';
 import React from 'react'
 import Card from './basicos/Layout/Card'
+
+import DiretaPai from './comunicacao/DiretaPai';
 import UsuarioInfo from './conditional/UsuarioInfo';
 import ParOuImpar from './conditional/ParOuImpar';
 import ListaAlunos from './Repeticao/ListaAlunos';
@@ -12,6 +14,7 @@ import Primeiro from './basicos/Primeiro'
 import ComParametros from './basicos/ComParametros'
 import Fragmentos from './basicos/Fragmentos'
 import TabelasProdutos from './Repeticao/TabelasProdutos';
+import IndiretaPai from './comunicacao/IndiretaPai';
 
 
 
@@ -20,7 +23,9 @@ export default () => (
   <div className='App'>
     <h1>Fundamentos React </h1>
 
-
+    <Card titulo="#9 Comunicacao direta" color= "lightblack">
+      <IndiretaPai></IndiretaPai>
+    </Card>     
 
     <Card titulo="#8 Renderizacao condicional" color= "lightblue">
       <ParOuImpar numero={21}></ParOuImpar>
