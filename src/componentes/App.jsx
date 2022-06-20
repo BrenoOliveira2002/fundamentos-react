@@ -10,6 +10,7 @@ import Aleatorio from './basicos/Aleatorio'
 import Primeiro from './basicos/Primeiro'
 import ComParametros from './basicos/ComParametros'
 import Fragmentos from './basicos/Fragmentos'
+import TabelasProdutos from './Repeticao/TabelasProdutos';
 
 
 
@@ -17,6 +18,10 @@ export default () => (
 
   <div className='App'>
     <h1>Fundamentos React </h1>
+
+    <Card titulo="#7 Repeticao" color="#FF4C95">
+      <TabelasProdutos > </TabelasProdutos>
+    </Card> 
 
     <Card titulo="#6 Repeticao" color="#FF4C65">
       <ListaAlunos></ListaAlunos>
