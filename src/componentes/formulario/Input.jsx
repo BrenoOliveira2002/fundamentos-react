@@ -20,7 +20,7 @@ export default props => {
         }}>
             <input value={valor} onChange={quandoMudar} ></input>
             <input value={valor} readOnly ></input>
-            <input value={undefined}> </input>
+
         </div>
         </div>
     )
